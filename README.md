@@ -1,3 +1,5 @@
+**Note: This is not a full implementation from forked repository and some features has added/edited/removed.
+Changes will be commited here, but not pull-requested.**
 
 # Calendar (v 0.1.1)
 
