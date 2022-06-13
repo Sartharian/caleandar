@@ -1,27 +1,35 @@
-######v0.0.1
-#Caleandar 
+
+# Calendar (v 0.1.1)
+
 Let me keep the intro brief. It's a lightweight (about `7.5kb` minified at the time of writing) and library-independent calendar script with optional themes. You can add events to the calendar and add functionality on click of the event. That's about the jist of it. Continue reading for instructions on how to use and examples.
 
-###Installing
-Simply download the caleandar.js file and any of the css themes you'd like. Then include a reference to the file(s) in your html:
+ - ### Installing
+
+Simply put the caleandar.js refeence file and any of the css themes you'd like. 
+
+Js:
 ```
 <script type="text/javascript" src="js/caleandar.min.js"></script>
 ```
-plus any of the following optional css files
+
+Css:
 ```
 <link rel="stylesheet" href="css/theme1.css"/>
+<!-- or -->
 <link rel="stylesheet" href="css/theme2.css"/>
+<!-- or -->
 <link rel="stylesheet" href="css/theme3.css"/>
 ```
+Just choose one of these to use.
 
-###Instantiating
+ - ### Instantiating
 At it's simplest, call the `calendar()` function with the following 3 optional parametars:
 ```
 caleandar(element, events, settings);
 ```
 Where `element` is an HTML element, `events` is an array of event objects and `settings` is an object of settings. Pretty straightforward so far.
 
-####Element
+ - ### Element
 A single HTML element.
 ######Examples:
 `var element = caleandar(document.querySelector('#foo'));`
@@ -33,9 +41,10 @@ A single HTML element.
 or if you are using jQuery:
 `var element = caleandar($('#foo'));`
 
-####Events
+#### Events
 An array of event objects to be placed on their respective dates on the calendar.
-######Examples:
+
+###### Examples:
 Using Simple links for events:
 ```
 var events = [
